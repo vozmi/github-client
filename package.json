@@ -12,10 +12,12 @@
     "eslint:fix": "npx  eslint --fix --debug ./src --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "graphql": "^16.6.0",
     "graphql-request": "^6.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.12.1"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^4.0.1",
