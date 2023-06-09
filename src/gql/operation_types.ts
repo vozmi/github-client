@@ -29171,7 +29171,9 @@ export enum WorkflowState {
   DisabledManually = 'DISABLED_MANUALLY'
 }
 
-export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
+export type GetUserReposQueryVariables = Exact<{
+  login: Scalars['String']['input'];
+}>;
 
 
-export type Unnamed_1_Query = { __typename?: 'Query', repositoryOwner?: { __typename?: 'Organization', repositories: { __typename?: 'RepositoryConnection', edges?: Array<{ __typename?: 'RepositoryEdge', node?: { __typename?: 'Repository', name: string, homepageUrl?: any | null, description?: string | null, owner: { __typename?: 'Organization', avatarUrl: any, login: string, url: any } | { __typename?: 'User', avatarUrl: any, login: string, url: any }, stargazers: { __typename?: 'StargazerConnection', totalCount: number } } | null } | null> | null } } | { __typename?: 'User', repositories: { __typename?: 'RepositoryConnection', edges?: Array<{ __typename?: 'RepositoryEdge', node?: { __typename?: 'Repository', name: string, homepageUrl?: any | null, description?: string | null, owner: { __typename?: 'Organization', avatarUrl: any, login: string, url: any } | { __typename?: 'User', avatarUrl: any, login: string, url: any }, stargazers: { __typename?: 'StargazerConnection', totalCount: number } } | null } | null> | null } } | null };
+export type GetUserReposQuery = { __typename?: 'Query', repositoryOwner?: { __typename?: 'Organization', repositories: { __typename?: 'RepositoryConnection', edges?: Array<{ __typename?: 'RepositoryEdge', node?: { __typename?: 'Repository', name: string, homepageUrl?: any | null, description?: string | null, owner: { __typename?: 'Organization', avatarUrl: any, login: string, url: any } | { __typename?: 'User', avatarUrl: any, login: string, url: any }, stargazers: { __typename?: 'StargazerConnection', totalCount: number } } | null } | null> | null } } | { __typename?: 'User', repositories: { __typename?: 'RepositoryConnection', edges?: Array<{ __typename?: 'RepositoryEdge', node?: { __typename?: 'Repository', name: string, homepageUrl?: any | null, description?: string | null, owner: { __typename?: 'Organization', avatarUrl: any, login: string, url: any } | { __typename?: 'User', avatarUrl: any, login: string, url: any }, stargazers: { __typename?: 'StargazerConnection', totalCount: number } } | null } | null> | null } } | null };
