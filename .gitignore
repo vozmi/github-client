@@ -26,3 +26,6 @@ dist-ssr
 coverage
 yarn.lock
 package-lock.json
+
+.env.production
+.env.local
